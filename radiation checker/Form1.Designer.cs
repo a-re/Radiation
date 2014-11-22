@@ -73,7 +73,7 @@
             // 
             // ele1Label
             // 
-            this.ele1Label.BackColor = System.Drawing.Color.White;
+            this.ele1Label.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ele1Label.Location = new System.Drawing.Point(49, 18);
             this.ele1Label.MaxLength = 3;
             this.ele1Label.Name = "ele1Label";
@@ -100,7 +100,7 @@
             // 
             // eminus
             // 
-            this.eminus.BackColor = System.Drawing.Color.White;
+            this.eminus.BackColor = System.Drawing.Color.WhiteSmoke;
             this.eminus.Location = new System.Drawing.Point(151, 19);
             this.eminus.MaxLength = 2;
             this.eminus.Name = "eminus";
@@ -283,27 +283,27 @@
             this.ele2FullName.AutoSize = true;
             this.ele2FullName.Location = new System.Drawing.Point(35, 140);
             this.ele2FullName.Name = "ele2FullName";
-            this.ele2FullName.Size = new System.Drawing.Size(34, 13);
+            this.ele2FullName.Size = new System.Drawing.Size(33, 13);
             this.ele2FullName.TabIndex = 26;
-            this.ele2FullName.Text = "Blank";
+            this.ele2FullName.Text = "None";
             // 
             // ele3FullName
             // 
             this.ele3FullName.AutoSize = true;
             this.ele3FullName.Location = new System.Drawing.Point(148, 140);
             this.ele3FullName.Name = "ele3FullName";
-            this.ele3FullName.Size = new System.Drawing.Size(34, 13);
+            this.ele3FullName.Size = new System.Drawing.Size(33, 13);
             this.ele3FullName.TabIndex = 27;
-            this.ele3FullName.Text = "Blank";
+            this.ele3FullName.Text = "None";
             // 
             // ele4FullName
             // 
             this.ele4FullName.AutoSize = true;
             this.ele4FullName.Location = new System.Drawing.Point(254, 140);
             this.ele4FullName.Name = "ele4FullName";
-            this.ele4FullName.Size = new System.Drawing.Size(34, 13);
+            this.ele4FullName.Size = new System.Drawing.Size(33, 13);
             this.ele4FullName.TabIndex = 28;
-            this.ele4FullName.Text = "Blank";
+            this.ele4FullName.Text = "None";
             // 
             // Form1
             // 

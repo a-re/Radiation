@@ -67,7 +67,7 @@ namespace radiation_checker
 
             if (listParse.Count > 3)
             {
-                throw new Exception("Something is REALLY wrong here");
+                throw new Exception("What");
             }
 
             int counter = 0;
@@ -114,16 +114,8 @@ namespace radiation_checker
             {
                 MessageBox.Show("Only numbers go in the atomic number field!", "Stupid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 ele1AtomNum.Text = "";
-                
-                // This is just because the warning sign under ex is pissing me off
-                string a = ex.Message;
             }
             
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
