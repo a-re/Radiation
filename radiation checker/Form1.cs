@@ -108,7 +108,7 @@ namespace radiation_checker
 
             try
             {
-                ele1Label.Text = Product.doElementMatch(int.Parse(ele1AtomNum.Text));
+                ele1Label.Text = Product.matchElement(int.Parse(ele1AtomNum.Text));
             }
             catch (FormatException ex)
             {
