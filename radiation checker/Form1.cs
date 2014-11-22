@@ -36,8 +36,6 @@ namespace radiation_checker
                 return;
             }
 
-            //ele1Label.Text.Equals("")
-
             if (ele1AtomNum.Text.Equals("") || ele1MassNum.Text.Equals(""))
             {
                 MessageBox.Show("Fill in your starting element!", "Stupid", MessageBoxButtons.OK, MessageBoxIcon.Error);
