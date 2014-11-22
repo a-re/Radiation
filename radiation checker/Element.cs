@@ -18,6 +18,7 @@ namespace radiation_checker
         int massNum;
         int atomNum;
         string symbol;
+
         string fullName = "Element";
         public ProductType type = ProductType.Element;
 
@@ -87,26 +88,26 @@ namespace radiation_checker
             {
                 case DecayMode.AlphaDecay:
                     List<Product> alphaList = new List<Product>();
-                    alphaList.Add(new Product(massNum - 4, atomNum - 2, doElementMatch(atomNum -2)));
+                    alphaList.Add(new Product(massNum - 4, atomNum - 2, matchElement(atomNum -2)));
                     alphaList.Add(new Product(4, 2, "He"));
 
                     return alphaList;
                 case DecayMode.BetaDecay:
                     List<Product> betaList = new List<Product>();
-                    betaList.Add(new Product(massNum, atomNum + 1, doElementMatch(atomNum + 1)));
+                    betaList.Add(new Product(massNum, atomNum + 1, matchElement(atomNum + 1)));
                     betaList.Add(new Product(ProductType.Electron));
                     betaList.Add(new Product(ProductType.ElectronAntiVE));
 
                     return betaList;
                 case DecayMode.ElectronCap:
                     List<Product> elecList = new List<Product>();
-                    elecList.Add(new Product(massNum, atomNum - 1, doElementMatch(atomNum - 1)));
+                    elecList.Add(new Product(massNum, atomNum - 1, matchElement(atomNum - 1)));
                     elecList.Add(new Product(ProductType.ElectronVE));
 
                     return elecList;
                 case DecayMode.Positron:
                     List<Product> posList = new List<Product>();
-                    posList.Add(new Product(massNum, atomNum - 1, doElementMatch(atomNum -1)));
+                    posList.Add(new Product(massNum, atomNum - 1, matchElement(atomNum -1)));
                     posList.Add(new Product(ProductType.Positron));
                     posList.Add(new Product(ProductType.ElectronVE));
 
@@ -144,20 +145,20 @@ namespace radiation_checker
                 case 22: return "H";
                 case 23: return "H";
                 case 24: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
-                case 1: return "H";
+                case 25: return "H";
+                case 26: return "H";
+                case 27: return "H";
+                case 28: return "H";
+                case 29: return "H";
+                case 30: return "H";
+                case 40: return "H";
+                case 50: return "H";
+                case 51: return "H";
+                case 52: return "H";
+                case 53: return "H";
+                case 54: return "H";
+                case 55: return "H";
+                case 56: return "H";
             }
             return "";
         }
