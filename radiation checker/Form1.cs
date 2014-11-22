@@ -32,7 +32,7 @@ namespace radiation_checker
         {
             if (comboBox1.Text.Equals(""))
             {
-                MessageBox.Show("You need to choose a decay mode!", "Stupid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You need to choose a decay mode!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -119,6 +119,11 @@ namespace radiation_checker
                 string a = ex.Message;
             }
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
